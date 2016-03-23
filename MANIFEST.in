@@ -3,12 +3,12 @@ include *.txt
 include *.rst
 
 # Non-python files.
-recursive-include sphinx_bootstrap_theme *
-recursive-exclude bootstrap *
+recursive-include jupyter_sphinx_theme *
+recursive-exclude node_modules *
 
 # Extraneous files.
 global-exclude .DS_Store
 global-exclude *.pyc
-exclude bootstrap
+exclude node_modules
 exclude demo
 exclude fabfile.py
