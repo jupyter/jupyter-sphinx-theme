@@ -2,7 +2,7 @@
 import os
 from setuptools import setup, find_packages
 
-from sphinx_bootstrap_theme import __version__
+from jupyter_sphinx_theme import __version__
 
 ###############################################################################
 # Environment and Packages.
@@ -11,7 +11,7 @@ from sphinx_bootstrap_theme import __version__
 os.environ['COPYFILE_DISABLE'] = "true"
 
 # Packages.
-MOD_NAME = "sphinx_bootstrap_theme"
+MOD_NAME = "jupyter_sphinx_theme"
 PKGS = [x for x in find_packages() if x.split('.')[0] == MOD_NAME]
 
 
@@ -35,15 +35,15 @@ def read_file(name):
 # Setup.
 ###############################################################################
 setup(
-    name="sphinx-bootstrap-theme",
+    name="jupyter-sphinx-theme",
     version=__version__,
     use_2to3=True,
-    description="Sphinx Bootstrap Theme.",
+    description="Jupyter Sphinx Theme.",
     long_description=read_file("README"),
-    url="http://ryan-roemer.github.com/sphinx-bootstrap-theme/README.html",
+    url="http://github.com/jupyter/sphinx-theme",
 
-    author="Ryan Roemer",
-    author_email="ryan@loose-bits.com",
+    author="Ryan Roemer, Project Jupyter, and contributors",
+    author_email="jupyter@googlegroups.com",
 
     classifiers=[
         "Development Status :: 5 - Production/Stable",

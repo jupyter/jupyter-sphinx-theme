@@ -255,3 +255,5 @@ table.field-list {
   }
 }
 {% endif %}
+
+{% include 'jupyter.css' %}
