@@ -29,7 +29,7 @@ The Sphinx Bootstrap Theme uses Bootstrap styling for ``inline code text`` and
 
 Here's an included example with line numbers.
 
-.. literalinclude:: ../../sphinx_bootstrap_theme/__init__.py
+.. literalinclude:: ../../jupyter_sphinx_theme/__init__.py
    :linenos:
 
 It also works with existing Sphinx highlighting:
