@@ -1,17 +1,25 @@
 """Jupyter sphinx theme."""
 import os
+import subprocess
+import sys
 from recommonmark.parser import CommonMarkParser
 
-VERSION = (0, 0, 1)
-
-__version__ = ".".join(str(v) for v in VERSION)
-__version_full__ = __version__
-theme_version = __version__
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
     cur_dir = os.path.abspath(os.path.dirname(__file__))
     return [cur_dir]
+
+def bash(fileName):
+    """Runs a bash script in the local directory"""
+    sys.stdout.flush()
+    subprocess.call("bash {}".format(fileName), shell=True)
+
+VERSION = (0, 0, 1)
+__version__ = ".".join(str(v) for v in VERSION)
+__version_full__ = __version__
+theme_version = __version__
 
 # Conf.py import settings
 source_parsers = {
