@@ -9,15 +9,13 @@ Install the package using PIP:
 pip install jupyter_sphinx_theme
 ```
 
-Edit the "conf.py" configuration file to point to the bootstrap theme:
+Edit the "conf.py" configuration file to point to the jupyter theme:
 
 ```python
 # At the top.
-import jupyter_sphinx_theme
+from jupyter_sphinx_theme import *
 
 # ...
 
-# Activate the theme.
-html_theme = 'bootstrap'
-html_theme_path = jupyter_sphinx_theme.get_html_theme_path()
+# Comment out the `html_theme =` line
 ```
