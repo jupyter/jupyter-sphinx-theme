@@ -1,6 +1,7 @@
 # Top level.
 include *.txt
 include *.rst
+include *.md
 
 # Non-python files.
 recursive-include jupyter_sphinx_theme *

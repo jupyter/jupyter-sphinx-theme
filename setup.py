@@ -21,7 +21,7 @@ PKGS = [x for x in find_packages() if x.split('.')[0] == MOD_NAME]
 def read_file(name):
     """Read file name (without extension) to string."""
     cur_path = os.path.dirname(__file__)
-    exts = ('txt', 'rst')
+    exts = ('txt', 'rst', 'md')
     for ext in exts:
         path = os.path.join(cur_path, '.'.join((name, ext)))
         if os.path.exists(path):
