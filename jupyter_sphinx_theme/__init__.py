@@ -15,7 +15,7 @@ def bash(fileName):
     sys.stdout.flush()
     subprocess.call("bash {}".format(fileName), shell=True)
 
-VERSION = (0, 0, 3)
+VERSION = (0, 0, 4)
 __version__ = ".".join(str(v) for v in VERSION)
 __version_full__ = __version__
 theme_version = __version__
