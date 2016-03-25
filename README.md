@@ -14,6 +14,7 @@ Edit the "conf.py" configuration file to point to the jupyter theme:
 ```python
 # At the top.
 from jupyter_sphinx_theme import *
+init_theme()
 
 # ...
 
