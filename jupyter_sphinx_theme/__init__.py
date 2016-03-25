@@ -2,7 +2,6 @@
 import os
 import subprocess
 import sys
-from recommonmark.parser import CommonMarkParser
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -21,10 +20,16 @@ __version__ = ".".join(str(v) for v in VERSION)
 __version_full__ = __version__
 theme_version = __version__
 
+# The suffix(es) of source filenames.
+# You can specify multiple suffix as a list of string:
+source_suffix = ['.rst', '.ipynb']
+
 # Conf.py import settings
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+source_parsers = {}
+def init_theme():
+    from recommonmark.parser import CommonMarkParser
+    source_parsers['.md'] = CommonMarkParser
+    source_suffix.append('.md')
 
 html_theme = 'jupyter'
 html_theme_path = get_html_theme_path()
@@ -35,10 +40,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'nbsphinx'
 ]
-
-# The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
-source_suffix = ['.rst', '.md', '.ipynb']
 
 html_sidebars = {
     '**': [
