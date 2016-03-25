@@ -105,7 +105,7 @@ table.field-list {
 }
 
 .bs-sidenav form, .bs-sidenav #sourcelink {
-  padding: 5px 20px;
+  padding: 5px 25px;
 }
 
 {% if theme_bootstrap_version == "3" %}
@@ -265,5 +265,4 @@ p.caption:not(:first-child) {
 }
 .toctree-l1 a.reference:before {
   padding-right: 0.5em !important;
-  content: '';
 }
