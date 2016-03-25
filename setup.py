@@ -59,6 +59,8 @@ setup(
 
     install_requires=[
         "setuptools",
+        "recommonmark==0.4.0",
+        "nbsphinx"
     ],
 
     packages=PKGS,
