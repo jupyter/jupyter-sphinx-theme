@@ -41,6 +41,7 @@ setup(
     description="Jupyter Sphinx Theme.",
     long_description=read_file("README"),
     url="http://github.com/jupyter/sphinx-theme",
+    license="BSD",
 
     author="Ryan Roemer, Project Jupyter, and contributors",
     author_email="jupyter@googlegroups.com",
@@ -50,7 +51,7 @@ setup(
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Topic :: Internet",
